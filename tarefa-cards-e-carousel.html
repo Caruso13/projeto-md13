@@ -3,8 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap - Cards</title>
+    <title>Tarefas-bootstrap-avançado</title>
     <link rel="stylesheet" href="lib/bootstrap.min.css">
+<style>
+
+
+@media screen and (max-widith:640px) {
+    
+    header {
+        display: block;
+        margin-bottom: 56px;
+    }
+    
+    
+    .produtos, .tab-pane {
+        max-width: 90%;
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+    }
+}
+
+@media screen and (min-widith: 641px) and (max-widith: 1023px) {
+    header {
+        display: block;
+        margin-bottom: 56px;
+    }
+
+    .produtos, .tab-pane {
+        max-width: 90%;
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+
+
+</style>
+
+
+
+
 
 </head>
 <header>
